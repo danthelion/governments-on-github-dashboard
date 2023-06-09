@@ -32,7 +32,7 @@ measures:
     description: "Ratio of repos without any license"
     format_preset: percentage
 dimensions:
-  - label: "Country"
+  - label: "Government"
     property: "country_name"
     description: ""
   - label: Organization
