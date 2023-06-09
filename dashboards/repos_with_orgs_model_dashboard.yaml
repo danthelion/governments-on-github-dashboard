@@ -1,0 +1,76 @@
+# Visit https://docs.rilldata.com/reference/project-files to learn more about Rill project files.
+
+title: "Governments on GitHub"
+model: "repos_with_orgs_model"
+default_time_range: ""
+smallest_time_grain: ""
+timeseries: "created_at"
+measures:
+  - label: Number of repos
+    expression: count(*)
+    name: total_records
+    description: Total number of repos
+    format_preset: humanize
+  - label: "Open issues"
+    expression: "sum(open_issues_count)"
+    name: measure
+    description: "Total number of open issues"
+    format_preset: humanize
+  - label: "Number of stars"
+    expression: "sum(stargazers_count)"
+    name: measure_1
+    description: "Total number of stars"
+    format_preset: humanize
+  - label: "Number of watchers"
+    expression: "sum(watchers_count)"
+    name: measure_2
+    description: "Total number of watchers"
+    format_preset: humanize
+  - label: "Repos without license"
+    expression: "sum(case when license_name is null then 1 else 0 end) / count(*)"
+    name: measure_3
+    description: "Ratio of repos without any license"
+    format_preset: percentage
+dimensions:
+  - label: "Country"
+    property: "country_name"
+    description: ""
+  - label: Organization
+    property: organization_name
+    description: ""
+  - label: Repo name
+    property: name
+    description: ""
+  - label: Description
+    property: description
+    description: ""
+  - label: License_name
+    property: license_name
+    description: ""
+  - label: Is Fork
+    property: fork
+    description: ""
+  - label: Language
+    property: language
+    description: ""
+  - label: Archived
+    property: archived
+    description: ""
+  - label: Default branch
+    property: default_branch
+    description: ""
+  - label: Is template
+    property: is_template
+    description: ""
+  - label: Topics
+    property: topics
+    description: ""
+  - label: Has wiki
+    property: has_wiki
+    description: ""
+  - label: Has pages
+    property: has_pages
+    description: ""
+  - label: Has discussions
+    property: has_discussions
+    description: ""

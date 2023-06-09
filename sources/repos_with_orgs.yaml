@@ -1,0 +1,4 @@
+# Visit https://docs.rilldata.com/ to learn more about Rill code files.
+
+type: "local_file"
+path: "data/repos_with_orgs.parquet"
