@@ -74,3 +74,6 @@ dimensions:
   - label: Has discussions
     property: has_discussions
     description: ""
+  - label: "URL"
+    property: "repo_url"
+    description: ""

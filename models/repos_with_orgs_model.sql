@@ -1,1 +1,1 @@
-select * from repos_with_orgs
+select *, concat('github.com/', full_name) as repo_url from repos_with_orgs
