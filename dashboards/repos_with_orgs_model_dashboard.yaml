@@ -1,6 +1,6 @@
 # Visit https://docs.rilldata.com/reference/project-files to learn more about Rill project files.
 
-title: "Governments on GitHub"
+title: "Governments on GitHub by arecadata.com"
 model: "repos_with_orgs_model"
 default_time_range: ""
 smallest_time_grain: ""
